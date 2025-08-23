@@ -1,10 +1,11 @@
 # 🌅 Daily Bing Image 自动更新项目
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/willow-god/daily-image/refs/heads/page/daily.webp" alt="Daily Bing Wallpaper" width="600" />
+  <img src="https://raw.githubusercontent.com/wojackop/daily-bing-pic/refs/heads/page/daily.webp" alt="Daily Bing Wallpaper" width="600" />
 </p>
 
-这是一个基于 GitHub Actions 自动获取并展示 Bing 每日高清壁纸的项目。每天早上 6 点（中国时间）自动抓取最新壁纸，生成 WebP/JPEG 格式图片，维护最近 30 天的壁纸，并发布至 `page` 分支，用于 GitHub Pages 页面展示。
+
+这是一个基于 GitHub Actions 自动获取并展示 Bing 每日高清壁纸的项目。每天中午 12 点（中国时间）自动抓取最新壁纸，生成 WebP/JPEG 格式图片，维护最近 30 天的壁纸，并发布至 `page` 分支，用于 GitHub Pages 页面展示。
 
 ---
 
@@ -40,18 +41,20 @@
 
 ## ⏱️ 自动化逻辑
 
+> ✅ 目标：每天自动获取 Bing 每日一图，转换为 WebP 格式，生成静态页面，并推送到 page 分支，用于 GitHub Pages 部署。
+
 通过 GitHub Actions 实现每日定时更新：
 
-- 使用 `cron: '0 20 * * *'`（UTC 时间），即北京时间早上 6 点。
-- 运行 `main.py` 获取并保存壁纸。
-- 将图片和网页内容推送到 `page` 分支。
-- 使用 GitHub Pages 公开展示（`https://willow-god.github.io/daily-image/`）。
+- 使用 `cron: "0 4 * * *"`（UTC 时间），即北京时间中午 12 点；
+- 运行 `main.py` 获取并保存壁纸；
+- 将图片和网页内容推送到 `page` 分支；
+- 使用 GitHub Pages 公开展示。
 
 ---
 
 ## 🌍 在线预览地址
 
-- 🔗 **EO Pages 页面**：[https://bing.liushen.fun/](https://bing.liushen.fun/)
+- 🔗 **EO Pages 页面**：[https://bing.gyhwd.top/](https://bing.gyhwd.top/)
 
 ---
 
